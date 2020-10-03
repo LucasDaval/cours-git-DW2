@@ -1,0 +1,340 @@
+@font-face {
+	font-family: "Paris";
+    src: url("polices/Paris.otf");
+    /*src: url("polices/Media-Gothic.ttf");*/
+}
+
+@font-face {
+	font-family: "ParisFont";
+    src: url("polices/Media-Gothic.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    text-decoration: none;
+}
+
+footer{
+    color: white;
+    background-color: #334279;
+    display: flex;
+    width:100%;
+    padding: 8px 0;
+    height:100px;
+    align-content: end;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    margin: 0;    
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------- Page Calendrier -------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+h1{
+    font-family: "ParisFont";
+    text-align: center;
+    font-size: 100px;
+    margin: 20px 0;
+}
+
+h2{
+    font-family: "ParisFont";
+}
+
+h3{
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+h4{
+    font-family: "ParisFont";
+    font-size: 20px;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+#menuBurger{
+	width: 42px;
+	height: 39px;
+	position: absolute;
+    cursor: pointer;
+    left: 4px;
+}
+
+#menuBurger span{
+	width: 70%;
+	height: 5px;
+	background-color: white;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+	/*transition: transform 1s ease-in-out;*/
+	z-index: 3;
+}
+
+#menuBurger span::before{
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	transform: translateY(10px);
+}
+
+#menuBurger span::after{
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	transform: translateY(-10px);
+}
+
+a{
+    font-family: sans-serif;
+}
+
+nav{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #334279;
+}
+nav a{
+    background-color: #334279;
+    color: #fffffe;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #fffffe;
+    border-radius: 8px;
+}
+
+nav a:hover{
+    color: #f53f32;
+    box-shadow: 0px 0px 10px #f53f32;
+}
+
+#LSL{
+    background-image: url("../img/LSL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#LDC{
+    background-image: url("../img/LDC.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#LSL, #LDC{
+    margin: 40px 15px 100px 15px;
+}
+
+#LSL div, #LDC div{
+    margin: 20px 0 20px 68px;  
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------- Page Sondages ---------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+#backG{
+    background-image: url("../img/parisTeam.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.paris{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #334279;
+}
+
+td{
+    text-align: left;
+    padding: 8px 30px 0 0;
+}
+
+button{
+    width: 26px;
+    margin-left: 4px;
+    background-color: #334279;
+    color: #fffffe;
+    box-shadow: 0px 0px 5px #fffffe;
+}
+
+#validerProno{
+    width: 120px;
+    display: flex;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#validerProno:hover{
+    color: #f53f32;
+    box-shadow: 0px 0px 10px #f53f32;
+}
+
+.paris button:hover{
+    color: #f53f32;
+    box-shadow: 0px 0px 10px #f53f32;
+}
+
+.paris p{
+    font-size: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#gardiens, #ailG, #arrG, #demi, #pivot, #arrD, #ailD{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionEquipe {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 25px;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#sectionEquipe h3{
+    margin-left: 20px;
+}
+
+#sectionEquipe .cards {
+    width: 280px;
+    height: 535px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px #212131;
+    text-align: center;
+    background-color: grey;
+    margin: 7px;
+}
+
+.cards img {
+    padding-left: 20px;
+    height: 300px;
+}
+
+.cards h2 {
+    color: #334279;
+}
+
+.cards .discord {
+    color: teal;
+}
+
+.cards .spanReseaux {
+    font-style: italic;
+}
+
+.cards hr {
+    width: 150px;
+    height: 3px;
+    box-shadow: 0 0 1em white;
+    background-color: #f53f32;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------- Page Résultats --------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.container{
+    display: flex;
+    width: 440px;
+    height: 50px;
+    border: solid 4px #334279;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.container a{
+    color: #334279;
+    font-family: "ParisFont";
+}
+
+.onglets{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.onglets:not(:nth-child(2)){
+    border-right: 4px solid #334279;
+}
+
+.container a:hover{
+    background-color: #334279;
+    color: #f53f32;
+    box-shadow: 0 0 1em #334279;
+}
+
+.contenu{
+    display: flex;
+    justify-content: center;
+}
+
+#perso table, #classement table{
+    border: 2px solid #334279;
+    width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+
+th{
+    font-size: 30px;
+}
+
+#perso{
+    position: absolute;
+}
+
+#perso th, #perso td, #perso tr{
+    text-align: center;
+    padding: 8px 0;
+    border: thin solid #334279;    
+}
+
+li{
+    list-style: none;
+}
+
+#classement{
+    position: absolute;
+    opacity: 0;
+}
+
+#classement table{
+    margin-right: 16px;
+}
+
+#classement th, #classement td, #classement tr{
+    text-align: center;
+    padding: 12px 150px;
+    border: thin solid #334279;    
+}
