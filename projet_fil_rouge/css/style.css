@@ -223,7 +223,7 @@ button{
 
 #sectionEquipe .cards {
     width: 280px;
-    height: 535px;
+    height: 565px;
     border: 1px solid black;
     box-shadow: 0px 0px 5px #212131;
     text-align: center;
@@ -238,6 +238,7 @@ button{
 
 .cards h2 {
     color: #334279;
+    font-size: 1.4em;
 }
 
 .cards .discord {
@@ -338,3 +339,32 @@ li{
     padding: 12px 150px;
     border: thin solid #334279;    
 }
+
+#conteneur{
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 20px 400px;
+    text-align: center;
+    padding: 30px 0;
+}
+        
+
+#formPlayer label{
+    margin-bottom: 10px;
+}
+
+#formPlayer input{
+    width: 400px;
+}
+
+#formPlayer button{
+    width: 60px;
+}
+
+#sondage{
+    display: none;
+}
+
+#q2, #q3, #q4{
+    display: none;
+} 
+

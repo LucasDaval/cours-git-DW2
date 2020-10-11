@@ -7,6 +7,8 @@
     <a href=".\pronostiques.php">Pronostiques de la semaine</a>
     <a href=".\calendrier.php">Calendrier des matchs</a>
     <a href=".\resultats.php">Résultats</a>
+    <a href=".\sondage.php">sondage</a>
+
 </nav>
 </header>
 

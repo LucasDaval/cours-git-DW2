@@ -1,5 +1,5 @@
 <?php 
-    include "inc/header.inc.php"
+    include "inc/head.inc.php"
 ?>
 
     <title>Page du PSG Handball</title>
